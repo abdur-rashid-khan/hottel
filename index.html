@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font wasame/css/all.min.css">
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/css/aos.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body onload="loading()">
+    <div id="loading"></div>
+
+    <div id="all_popup">
+        <div class="fast_alert">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <p><strong>Wellcame</strong> For Your Visite</p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="mane_menu">
+                    <div class="lg_menu">
+                        <div class="menu_logo">
+                            <a href="javascript:void(0)">
+                                <img src="resources/img/logo.png" class="img-fluid" alt="logo">
+                            </a>
+                        </div>
+                        <div class="menu_items">
+                            <ul>
+                                <li><a href="#home">HOME</a></li>
+                                <li><a href="#booking">BOOKING</a></li>
+                                <li><a href="#accommodtion">ACCOMMODATION</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#about">About</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile_menu">
+                            <div onclick="openMenu()" class="menu_icon">
+                                <a  href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div id="myNav" class="overlay">
+                                <div id="menu-sazing">
+                                    <a id="closeBtn" onclick="closeMenu()" href="javascript:void(0)">&times;</a>
+                                    <div class="overlay_content">
+                                        <div class="user_info">
+                                            <ul>
+                                                <li><a href="#"></a>
+                                                <img src="resources/img/logo.png" id="logo" alt="logo">
+                                                </li><br/>
+                                                <li><a href="#"><span id="user"><i class="fas fa-user-circle"></i></span></a>
+                                                </li>
+                                                <br/>
+                                                <br/>
+                                                <li><a href="javascript:void(0)">User Id</a></li>
+                                            </ul>
+                                        </div>
+                                        <a onclick="closeMenu()" href="#home">Home</a>
+                                        <a onclick="closeMenu()" href="#booking">BOOKING</a>
+                                        <a onclick="closeMenu()"  href="#accommodtion">ACCOMMODATION</a>
+                                        <a onclick="closeMenu()" href="#gallery">Gallery</a>
+                                        <a onclick="closeMenu()"href="#about">About</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="fast_content">
+            <div class="container">
+                <div class="py-3">
+                    <h2>Wellcame to " REAL HOMES "</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae placeat exercitationem quod neque molestias sequi consequuntur pariatur quas doloremque amet..........</p>
+                    <a href="#">see more</a>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <!-- <section id="wather" class="py-3"> 
+        <div class="container">
+            <div class="wather_now">
+                <h2>Wather Today</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md 6 col-lg-6 col-xl-6">
+                    <div class="wather_content py-3">
+                        <span><i class="fas fa-cloud-sun"></i>Sunrise Today:05:13 , 64° Northeast .</span><br/>
+                        <span><i class="fas fa-cloud-sun"></i>Sunset Today:	18:49, 296° Northwest . </span><br/>
+                        <span><i class="fas fa-temperature-low"></i>Temperature Today :  30 . <sup>o</sup> <a href="#">see more</a></span><br/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md 6 col-lg-6 col-xl-6">
+                    <div class="wather_time">
+                        <h4 id="localTime">0:00:pm</h4>
+                        <h3>Local Time Now</h3> 
+                        <p><span class="text-muted pt-3">note : </span> Lorem ipsum dolor sit amet consectetur adipisicing.  </p>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section> -->
+    <section  class=" show_navbar py-5">
+        <div class="container">
+            <div id="booking" class="py-3">
+                <h2>
+                    Booking Now 
+                </h2>
+                <hr>
+            </div>
+            <div class="row" id="checking">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 pt-3" id="col_2">
+                    <div class="booking_email">
+                        <label for="email">
+                            <p>E-mail Address</p>
+                            <input class="form-control" type="text" name="email" placeholder="e-mail adders">
+                        </label>
+                    </div> 
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 pt-3" id="col_2">
+                    <div class="booking_email">
+                        <label for="date">
+                            <p>Check in</p>
+                            <input class="form-control" type="date">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 pt-3" id="col_2">
+                    <div class="booking_email">
+                        <label for="date">
+                            <p>Check out</p>
+                            <input class="form-control" type="date">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 pt-3" id="col_2">
+                    <div class="booking_email">
+                        <p>famliy Member</p>
+                        <select class="form-control" lass="form-control" name="member">
+                            <option value="select">Select Option</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="accommodtion" class="py-5">
+        <div class="container">
+            <div id="accommodtion_header">
+                <h2>Accommodation</h2><hr>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 py-4" id="col_2">
+                    <div class="room_content">
+                        <div class="room_img">
+                            <img src="resources/img/72194559.webp" class="img-fluid" alt="hotell_1" id="hotell_img_size">
+                            <p>Fast Flor</p> 
+                        </div> 
+                    </div>
+                    <div class="room_text"> 
+                        <!-- <h5 class="py-4"><strong class="text-info">Per_Night</strong></h5> -->
+                        <h3> <strong>free </strong><del style="color:red;"><strong>$</strong> 1100</del></h3>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, est corporis! Laboriosam reprehenderit nihil dicta tenetur provident. Reiciendis neque quod hic! Soluta suscipit cum ipsum doloremque mollitia nemo perspiciatis porro dicta reiciendis in repellat aliquid eum, debitis recusandae animi earum aperiam enim at laboriosam aliquam saepe velit! Cupiditate, ipsum quidem?</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 py-4" id="col_2">
+                    <div class="room_content">
+                        <div class="room_img">
+                            <img src="resources/img/92100173.webp" class="img-fluid" alt="hotell_1" id="hotell_img_size">
+                            <p>Singal Bed</p> 
+                        </div> 
+                    </div>
+                    <div class="room_text"> 
+                        <h3> <strong>$</strong> 1000. <del style="color:red;"> <strong>$</strong> 1100</del></h3>
+                        <h5 class="py-4"><strong class="text-info">Per_Night</strong></h5>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, est corporis! Laboriosam reprehenderit nihil dicta tenetur provident. Reiciendis neque quod hic! Soluta suscipit cum ipsum doloremque mollitia nemo perspiciatis porro dicta reiciendis in repellat aliquid eum, debitis recusandae animi earum aperiam enim at laboriosam aliquam saepe velit! Cupiditate, ipsum quidem?</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 py-4" id="col_2">
+                    <div class="room_content">
+                        <div class="room_img">
+                            <img src="resources/img/xcustomar1.png.pagespeed.ic.WF9ifolFmW.webp" class="img-fluid" alt="hotell_1" id="hotell_img_size">
+                            <p>Gest Room</p> 
+                        </div> 
+                    </div>
+                    <div class="room_text"> 
+                        <h3> <strong>$</strong> 1000. <del style="color:red;"> <strong>$</strong> 1100</del></h3>
+                        <h5 class="py-4"><strong class="text-info">Per_Night</strong></h5>
+
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, est corporis! Laboriosam reprehenderit nihil dicta tenetur provident. Reiciendis neque quod hic! Soluta suscipit cum ipsum doloremque mollitia nemo perspiciatis porro dicta reiciendis in repellat aliquid eum, debitis recusandae animi earum aperiam enim at laboriosam aliquam saepe velit! Cupiditate, ipsum quidem?</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 py-4" id="col_2">
+                    <div class="room_content">
+                        <div class="room_img">
+                            <img src="resources/img/xroom3.jpg.pagespeed.ic.-SwJ2u06mO.webp" class="img-fluid" alt="hotell_1" id="hotell_img_size">
+                            <p>mediam room</p> 
+                        </div> 
+                    </div>
+                    <div class="room_text"> 
+                        <h3> <strong>$</strong> 1000. <del style="color:red;"> <strong>$</strong> 1100</del></h3>
+                        <h5 class="py-4"><strong class="text-info">Per_Night</strong></h5>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, est corporis! Laboriosam reprehenderit nihil dicta tenetur provident. Reiciendis neque quod hic! Soluta suscipit cum ipsum doloremque mollitia nemo perspiciatis porro dicta reiciendis in repellat aliquid eum, debitis recusandae animi earum aperiam enim at laboriosam aliquam saepe velit! Cupiditate, ipsum quidem?</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 py-4" id="col_2">
+                    <div class="room_content">
+                        <div class="room_img">
+                            <img src="resources/img/xroom5.jpg.pagespeed.ic.DcL5dku8g2.webp" class="img-fluid" alt="hotell_1" id="hotell_img_size">
+                            <p>Small Room</p>
+                        </div> 
+                    </div>
+                    <div class="room_text"> 
+                        <h3> <strong>$</strong> 1000. <del style="color:red;"> <strong>$</strong> 1100</del></h3>
+                        <h5 class="py-4"><strong class="text-info">Per_Night</strong></h5>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, est corporis! Laboriosam reprehenderit nihil dicta tenetur provident. Reiciendis neque quod hic! Soluta suscipit cum ipsum doloremque mollitia nemo perspiciatis porro dicta reiciendis in repellat aliquid eum, debitis recusandae animi earum aperiam enim at laboriosam aliquam saepe velit! Cupiditate, ipsum quidem?</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 py-4" id="col_2">
+                    <div class="room_content">
+                        <div class="room_img">
+                            <img src="resources/img/xroom1.jpg.pagespeed.ic.DBxObuxN6l.webp" class="img-fluid" alt="hotell_1" id="hotell_img_size">
+                            <p>Small Room</p>
+                        </div> 
+                    </div>
+                    <div class="room_text"> 
+                        <h3> <strong>$</strong> 1000. <del style="color:red;"> <strong>$</strong> 1100</del></h3>
+                        <h5 class="py-4"><strong class="text-info">Per_Night</strong></h5>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, est corporis! Laboriosam reprehenderit nihil dicta tenetur provident. Reiciendis neque quod hic! Soluta suscipit cum ipsum doloremque mollitia nemo perspiciatis porro dicta reiciendis in repellat aliquid eum, debitis recusandae animi earum aperiam enim at laboriosam aliquam saepe velit! Cupiditate, ipsum quidem?</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="py-4">
+        <div class="container">
+            <div class="gallery_header">
+                <h2>Hotel  Around</h2>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                        <div class="gallery_content">
+                            <div class="gallery_img">
+                                <img src="resources/img/290813877.webp" alt="gallery_1" class="img-fluid">
+                            </div>
+                            <div class="gallery_text text-center">
+                                <span><i class="fas fa-mountain"></i></span><br/>
+                                <a href="#">Visite Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                        <div class="gallery_content">
+                            <div class="gallery_img">
+                                <img src="resources/img/145808478.webp" alt="gallery_1" class="img-fluid">
+                            </div>
+                            <div class="gallery_text text-center">
+                                <span><i class="fas fa-mountain"></i></span><br/>
+                                <a href="#">Visite Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                        <div class="gallery_content">
+                            <div class="gallery_img">
+                                <img src="resources/img/289833452.webp" alt="gallery_1" class="img-fluid">
+                            </div>
+                            <div class="gallery_text text-center">
+                                <span><i class="fas fa-mountain"></i></span><br/>
+                                <a href="#">Visite Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                        <div class="gallery_content">
+                            <div class="gallery_img">
+                                <img src="resources/img/290813877.webp" alt="gallery_1" class="img-fluid">
+                            </div>
+                            <div class="gallery_text text-center">
+                                <span><i class="fas fa-mountain"></i></span><br/>
+                                <a href="#">Visite Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                        <div class="gallery_content">
+                            <div class="gallery_img">
+                                <img src="resources/img/145808478.webp" alt="gallery_1" class="img-fluid">
+                            </div>
+                            <div class="gallery_text text-center">
+                                <span><i class="fas fa-mountain"></i></span><br/>
+                                <a href="#">Visite Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                        <div class="gallery_content">
+                            <div class="gallery_img">
+                                <img src="resources/img/289833452.webp" alt="gallery_1" class="img-fluid">
+                            </div>
+                            <div class="gallery_text text-center">
+                                <span><i class="fas fa-mountain"></i></span><br/>
+                                <a href="#">Visite Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="food" class="py-4">
+        <div class="container">
+            <div class="food_header">
+                <h2>Foods</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-4">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5  py-2" id="col_2">
+                                <div class="food_img">
+                                    <img src="resources/img/menu.jpg" alt="foods_1" class="img-fluid">
+                                </div> 
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 py-2" id="col_2">
+                            <div class="food_text">
+                                <h2>Lorem ipsum dolor</h2><hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptatum porro sed reiciendis .</p>
+                                <div id="star">
+                                    <ul>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star-half"></i></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#"><span style="color: #000; font-size:1.5rem;">$</span>05:00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-4">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5  py-2" id="col_2">
+                                <div class="food_img">
+                                    <img src="resources/img/menu2.jpg" alt="foods_2" class="img-fluid">
+                                </div> 
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7  py-2" id="col_2">
+                            <div class="food_text">
+                                <h2>Lorem ipsum dolor</h2><hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptatum porro sed reiciendis .</p>
+                                <div id="star">
+                                    <ul>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star-half"></i></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#"><span style="color: #000; font-size:1.5rem;">$</span>05:00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-4">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5  py-2" id="col_2">
+                                <div class="food_img">
+                                    <img src="resources/img/menu3.jpg" alt="foods_1" class="img-fluid">
+                                </div> 
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 py-2" id="col_2">
+                            <div class="food_text">
+                                <h2>Lorem ipsum dolor</h2><hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptatum porro sed reiciendis .</p>
+                                <div id="star">
+                                    <ul>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star-half"></i></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#"><span style="color: #000; font-size:1.5rem;">$</span>05:00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-4">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5  py-2" id="col_2">
+                                <div class="food_img">
+                                    <img src="resources/img/menu6.jpg" alt="foods_2" class="img-fluid">
+                                </div> 
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7  py-2" id="col_2">
+                            <div class="food_text">
+                                <h2>Lorem ipsum dolor</h2><hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptatum porro sed reiciendis .</p>
+                                <div id="star">
+                                    <ul>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star-half"></i></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#"><span style="color: #000; font-size:1.5rem;">$</span>05:00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-4">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5  py-2" id="col_2">
+                                <div class="food_img">
+                                    <img src="resources/img/menu5.jpg" alt="foods_1" class="img-fluid">
+                                </div> 
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 py-2" id="col_2">
+                            <div class="food_text">
+                                <h2>Lorem ipsum dolor</h2><hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptatum porro sed reiciendis .</p>
+                                <div id="star">
+                                    <ul>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star-half"></i></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#"><span style="color: #000; font-size:1.5rem;">$</span>05:00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-4">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5  py-2" id="col_2">
+                                <div class="food_img">
+                                    <img src="resources/img/menu1.jpg" alt="foods_2" class="img-fluid">
+                                </div> 
+                        </div>
+                        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7  py-2" id="col_2">
+                            <div class="food_text">
+                                <h2>Lorem ipsum dolor</h2><hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptatum porro sed reiciendis .</p>
+                                <div id="star">
+                                    <ul>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star"></i></span></li>
+                                        <li><span><i class="fas fa-star-half"></i></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#"><span style="color: #000; font-size:1.5rem;">$</span>05:00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cliant">
+        <div class="container">
+            <div class="cliant_banner">
+                <h2>Cliant Review</h2>
+                <hr>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="clinat_review py-5">
+                    <div class="client_img">
+                        <img src="resources/img/t1.jpg" alt="claint_1">
+                    </div>
+                    <div class="cliant_text">
+                        <h2>Jon Devid </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui veniam impedit consequuntur voluptatibus magnam animi soluta aspernatur, suscipit nulla . <a href="#">see more</a></p>
+                        
+                    </div>
+                    <div id="star">
+                        <ul>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star-half"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clinat_review py-5">
+                    <div class="client_img">
+                        <img src="resources/img/t2.jpg" alt="claint_1">
+                    </div>
+                    <div class="cliant_text">
+                        <h2>Jon Devid </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui veniam impedit consequuntur voluptatibus magnam animi soluta aspernatur, suscipit nulla . <a href="#">see more</a></p> 
+                    </div>
+                    <div id="star">
+                        <ul>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star-half"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clinat_review py-5">
+                    <div class="client_img">
+                        <img src="resources/img/t3.jpg" alt="claint_1">
+                    </div>
+                    <div class="cliant_text">
+                        <h2>Jon Devid </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui veniam impedit consequuntur voluptatibus magnam animi soluta aspernatur, suscipit nulla . <a href="#">see more</a> </p> 
+                    </div>
+                    <div id="star">
+                        <ul>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star-half"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clinat_review py-5">
+                    <div class="client_img">
+                        <img src="resources/img/t4.jpg" alt="claint_1">
+                    </div>
+                    <div class="cliant_text">
+                        <h2>Jon Devid </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui veniam impedit consequuntur voluptatibus magnam animi soluta aspernatur, suscipit nulla . <a href="#">see more</a> </p> 
+                    </div>
+                    <div id="star">
+                        <ul>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star-half"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clinat_review py-5">
+                    <div class="client_img">
+                        <img src="resources/img/t5.jpg" alt="claint_1">
+                    </div>
+                    <div class="cliant_text">
+                        <h2>Jon Devid </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui veniam impedit consequuntur voluptatibus magnam animi soluta aspernatur, suscipit nulla . <a href="#">see more</a></p> 
+                    </div>
+                    <div id="star">
+                        <ul>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star"></i></span></li>
+                            <li><span><i class="fas fa-star-half"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map">
+        <div class="container">
+            <div class="map_header">
+                <h2>Follow This Map</h2><hr>
+            </div>
+            <div class="map_section py-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167997.34988491551!2d2.206974659694324!3d48.85899999273404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sbd!4v1625020027329!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="contact_header">
+                <h2>Contact Now</h2><hr>
+            </div>
+            <div class="row py-4">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6  py-4">
+                    <div class="row" id="tw_name">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" id="col_2">
+                            <label for="name"> FAST NAME</label>
+                            <input class="form-control" type="text " placeholder=" ENTER YOUR FAST NAME">
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" id="col_2">
+                            <label for="name"> LAST NAME</label>
+                            <input class="form-control" type="text " placeholder=" ENTER YOUR LAST NAME">
+                        </div>
+                    </div>
+                    <textarea class="form-control" placeholder="What do you think?" name="messeg" cols="30" rows="8"></textarea>
+                    <a href="#">send</a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-4">
+                    <div class="contact_logo">
+                        <img class="img-fluid" src="resources/img/logo.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="about" class="py-5">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3" id="col_2">
+                    <div class="footer_header">
+                        <h2>Company</h2>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">How we work</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3" id="col_2">
+                    <div class="footer_header">
+                        <h2>Contact</h2>
+                        <ul> 
+                            <li><a href="#">Help/FAQ</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Advertise with us</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3" id="col_2">
+                    <div class="footer_header">
+                        <h2>More</h2>
+                        <ul>
+                            <li><a href="#">Airline fees</a></li>
+                            <li><a href="#">Airlines</a></li>
+                            <li><a href="#">Low fare tips</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Badges & Certificates</a></li>
+                        </ul>
+                    </div> 
+            </div> 
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3" id="col_2">
+                <div class="footer_header">
+                    <h2>Admin</h2>
+                    <ul>
+                        <li><a href="#">+8888888888888888</a></li>
+                        <li><a href="#">compani@gamil.com</a></li>
+                        <li><a href="#">sec more...</a></li> 
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="companney">
+                <ul class="py-5 ">
+                    <li><a href="#"><img src="resources/img/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" class="img-fluid" alt="1"></a></li>
+                    <li><a href="#"><img src="resources/img/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0 (1).png" class="img-fluid" alt="1"></a></li>
+                    <li><a href="#"><img src="resources/img/83ef7122074473a6566094e957ff834badb58ce6.png" class="img-fluid" alt="1"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="vendors/js/jQuery.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/popper.min.js"></script>
+    <script src="vendors/js/aos.js"></script>
+    <script src="vendors/js/owl.carousel.min.js"></script> 
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/min.js"></script>
+</body>
+</html>
