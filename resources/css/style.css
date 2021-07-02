@@ -625,8 +625,11 @@ footer .companney{
         text-align: center;
     }
 }
-@media only screen and (max-width:575px) {
+@media only screen and (max-width:375px) {
     header .fast_content p {
         font-size: 1.5rem;
+    }
+    #all_popup .fast_alert{
+    width:60%;
     }
 }
