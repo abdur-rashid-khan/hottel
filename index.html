@@ -704,5 +704,17 @@
     <script src="vendors/js/owl.carousel.min.js"></script> 
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/min.js"></script>
+    <script>
+        const navlink = document.querySelectorAll(".navbar a");
+        navlink.forEach(elem => elem.addEventListener("click", smoothscroll));
+        function smoothscroll(event){
+            event.preventDefault();
+            const targetId = event.currentTarget.getAttribute("href");
+            window.scrollTo({
+            top: document.querySelector(targetId).offsetTop,
+            behavior: "smooth"
+            })
+        }
+    </script>
 </body>
 </html>
